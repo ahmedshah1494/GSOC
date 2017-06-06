@@ -52,7 +52,7 @@ def mlp3():
 	              metrics=['accuracy'])
 	return model
 data = np.load('wsj0_randlabels.npz')
-model = mlp1()
+model = mlp3()
 plot_model(model, to_file='mlp3_model.png')
 # x_train = data['X_Train'][:1000000]
 # y_train = data['Y_Train'][:1000000]
